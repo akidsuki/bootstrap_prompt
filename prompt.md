@@ -211,7 +211,7 @@ AGENTS.md も 100 行以内を目安にする。超えそうなら、フォル�
 
 併せて、プロジェクトルートに CLAUDE.md を作り、中身は `@AGENTS.md` の 1 行だけにする。
 
-- Claude Code はバージョンによって AGENTS.md を自動では読まないため。CLAUDE.md から読み込めば、バージョンによらず AGENTS.md が読まれる。
+- Claude Code は v2.1.277 以降、CLAUDE.md が無ければ AGENTS.md を直接読む。ただし CLAUDE.local.md を置いた場合や、古い版・一部の設定では読まない。CLAUDE.md から読み込めば、どの場合でも AGENTS.md が読まれ、二重にも読まれない（Claude Code 公式ドキュメント https://code.claude.com/docs/en/memory による。2026-11-14 確認）
 - 規約は AGENTS.md に一本化し、CLAUDE.md には書かない。2 か所に書くと片方だけ更新されて食い違う
 
 開発の途中で以下が発生したら、その場で対応するドキュメントを書く。後からまとめて書き起こさない。判断の理由はその場でしか残らない。
