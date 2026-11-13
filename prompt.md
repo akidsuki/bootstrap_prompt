@@ -209,10 +209,11 @@ AGENTS.md も 100 行以内を目安にする。超えそうなら、フォル�
 
 この文書の「私」は、AGENTS.md では「依頼者」と書く。AGENTS.md は別のセッションのエージェントが読むので、「私」のままでは誰を指すか読めない。README などの「利用者」（このプロジェクトを使う人）とは別の語にする。
 
-併せて、プロジェクトルートに CLAUDE.md を作り、中身は `@AGENTS.md` の 1 行だけにする。
+CLAUDE.md と CLAUDE.local.md は作らない。
 
-- Claude Code は v2.1.277 以降、CLAUDE.md が無ければ AGENTS.md を直接読む。ただし CLAUDE.local.md を置いた場合や、古い版・一部の設定では読まない。CLAUDE.md から読み込めば、どの場合でも AGENTS.md が読まれ、二重にも読まれない（Claude Code 公式ドキュメント https://code.claude.com/docs/en/memory による。2026-11-14 確認）
-- 規約は AGENTS.md に一本化し、CLAUDE.md には書かない。2 か所に書くと片方だけ更新されて食い違う
+- Claude Code は v2.1.277 以降、CLAUDE.md も CLAUDE.local.md も無いときに AGENTS.md を直接読む。どちらかを置くと AGENTS.md を読まなくなる（Claude Code 公式ドキュメント https://code.claude.com/docs/en/memory による。2026-11-14 確認）
+- 規約は AGENTS.md に一本化する。2 か所に書くと片方だけ更新されて食い違う
+- v2.1.277 より古い版や、AGENTS.md を読まない設定では規約が読まれない。そうした環境で使うことになったら、私に確認する
 
 開発の途中で以下が発生したら、その場で対応するドキュメントを書く。後からまとめて書き起こさない。判断の理由はその場でしか残らない。
 
